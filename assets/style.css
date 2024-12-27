@@ -87,7 +87,7 @@
   width: 100vw;
 }
 .bg-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/viber12.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('viber12.jpg');
   /*background-size: fit;
   background-position: center;*/
   background-position: center;
@@ -796,7 +796,7 @@ swiper-slide img {
   text-align: center;
   padding: 20px;
 
-  /*background-image: url('../assets/img/loc-bg.png');
+  /*background-image: url('loc-bg.png');
   background-size: cover;
   background-position: center;*/
   height: 100vh!important;
