@@ -87,7 +87,7 @@
   width: 100vw;
 }
 .bg-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('viber12.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/viber12.jpg');
   /*background-size: fit;
   background-position: center;*/
   background-position: center;
