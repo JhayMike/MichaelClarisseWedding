@@ -2,7 +2,14 @@
   scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
 
+* {
+  box-sizing: border-box;
+}
 /*Nav Bar*/
 .wed-logo{
   height: 40px; 
@@ -782,7 +789,7 @@ swiper-slide img {
   height: 85vh;
   width: 75vw;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .bg-img img{
     margin-top: 0;
     height: 45vh;
