@@ -10,16 +10,7 @@ body {
 * {
   box-sizing: border-box;
 }
-@media screen and (max-width: 768px) {
-  body {
-    margin: 0;
-    overflow-x: hidden;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-}
+
 /*Nav Bar*/
 .wed-logo{
   height: 40px; 
@@ -27,12 +18,18 @@ body {
   border-radius: 50%;
 }
 /* Custom CSS to change the color of the navbar-toggler-icon to white */
-.navbar-toggler-icon {
-  background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 30 30%22%3E%3Cpath stroke%3D%22white%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+.navbar{
+  width: 100vw!important;
 }
+/*.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 30 30%22%3E%3Cpath stroke%3D%22white%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+}*/
 
 .nav-item a{
   font-family: 'Montserrat';
+  white-space: nowrap; /* Prevents items from breaking awkwardly */
+    overflow: hidden;    /* Prevents items from overflowing */
+    text-overflow: ellipsis; /* Adds ellipsis for long text */
 }
 .nav-link{
   color: #ffffff;
@@ -104,7 +101,7 @@ body {
   width: 100vw;
 }
 .bg-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/viber12.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/viber12.jpg');
   /*background-size: fit;
   background-position: center;*/
   background-position: center;
@@ -136,7 +133,6 @@ body {
   margin-top: 100px;
   animation: myAnim 2s ease 0s 1 normal forwards;
 }
-
 /* CountDown Timer */
 /* Font styles */
 .flipdown.flipdown__theme-dark {
@@ -794,18 +790,34 @@ swiper-slide img {
   color: #dcbe6e;
 }
 
+.bg-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .bg-img img{
   margin-top: 5vh;
   height: 85vh;
   width: 75vw;
 }
-@media screen and (max-width: 768px) {
-  .bg-img img{
-    margin-top: 0;
-    height: 45vh;
-    width: 110vw;
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .attire-guide-section {
+    padding: 10px; /* Reduce padding */
   }
-} 
+
+  .bg-img img {
+    height: 50vh;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-img img {
+    height: 50vh;
+    padding-top: 0vh;
+  }
+}
 /* End of Attire Guide Section */
 
 /* Location Section */
@@ -813,7 +825,7 @@ swiper-slide img {
   text-align: center;
   padding: 20px;
 
-  /*background-image: url('loc-bg.png');
+  /*background-image: url('../assets/img/loc-bg.png');
   background-size: cover;
   background-position: center;*/
   height: 100vh!important;
